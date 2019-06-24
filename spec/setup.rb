@@ -1,9 +1,14 @@
 # frozen_string_literal: true
 
-require_relative '../lib/obscured-timeline'
 require 'factory_bot'
-require 'rspec'
 require 'pp'
+require 'rspec'
+require 'simplecov'
+require_relative '../lib/obscured-timeline'
+
+SimpleCov.start do
+  add_filter '/spec/'
+end
 
 Mongoid.load!(File.join(File.dirname(__FILE__), '/config/mongoid.yml'), 'spec')
 Mongo::Logger.logger.level = Logger::ERROR
