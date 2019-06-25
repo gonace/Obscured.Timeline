@@ -49,7 +49,7 @@ end
 
 
 account = Obscured::Account.create(:name => "John Doe", :email => "john.doe@obscured.se")
-event = account.add_event({ type: :comment, message: "Lorem ipsum dolor sit amet?", producer: "homer.simpson@obscured.se" })
+event = account.add_event(type: :comment, message: "Lorem ipsum dolor sit amet?", producer: "homer.simpson@obscured.se")
 
 #returns array of events for document (proprietor)
 account.get_events 
