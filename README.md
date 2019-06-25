@@ -32,7 +32,7 @@ require 'obscured-timeline'
 
 
 ### Example
-#### Usage
+#### Document
 ```ruby
 require 'obscured-timeline'
 
@@ -62,4 +62,26 @@ account.find_events({ type: nil, producer: nil }, { limit: 20, skip: 0, order: :
 
 #retuns array of events
 account.search_events("homer.simpson@obscured.se", { type: :comment, limit: 20, skip: 0, order: :created_at.desc }) 
+```
+
+#### Service
+```
+module Obscured
+  class AccountTimelineService
+    include Mongoid::Timeline::Service::Base
+  end
+end
+
+module Obscured
+  class AccountSynchronizer
+    def initialize(account)
+      @account = account
+      @service = Obscured::AccountTimelineService.new
+    end
+
+    def timeline
+      @service.by(proprietor: { account_id: account.id })
+    end
+  end
+end
 ```
