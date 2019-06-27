@@ -7,8 +7,6 @@ require 'rspec'
 require 'simplecov'
 
 SimpleCov.start do
-  #track_files 'lib/**/{record,tracker}.rb'
-
   add_filter 'spec/'
 end
 
