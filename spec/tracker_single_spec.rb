@@ -112,16 +112,16 @@ describe Mongoid::Timeline::Tracker do
         5.times do
           account.add_event(type: :change, message: message, producer: account.email)
         end
+      end
 
-        it { expect(account.get_events.count).to be(12) }
+      it { expect(account.get_events.count).to be(12) }
 
-        context 'clear all event' do
-          before(:each) do
-            account.clear_events
-          end
-
-          it { expect(account.get_events.count).to be(0) }
+      context 'clear all event' do
+        before(:each) do
+          account.clear_events
         end
+
+        it { expect(account.get_events.count).to be(0) }
       end
     end
   end
