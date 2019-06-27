@@ -14,6 +14,7 @@ module Mongoid
         include Mongoid::Timestamps
 
         field :type, type: Symbol
+        field :severity, type: Symbol, default: :informational
         field :message, type: String
         field :producer, type: String
         field :proprietor, type: Hash
@@ -35,6 +36,7 @@ module Mongoid
 
           doc = new
           doc.type = params[:type]
+          doc.severity = params[:severity].to_sym unless params[:severity].blank?
           doc.message = params[:message]
           doc.producer = params[:producer]
           doc.proprietor = params[:proprietor]
@@ -55,6 +57,7 @@ module Mongoid
 
           query = {}
           query[:type] = params[:type].to_sym if params[:type]
+          query[:severity] = params[:severity].to_sym if params[:severity]
           query[:producer] = params[:producer].to_sym if params[:producer]
           params[:proprietor]&.map { |k, v| query.merge!("proprietor.#{k}" => v) }
 

@@ -80,6 +80,7 @@ module Mongoid
         Record.with(collection: "#{self.class.name.demodulize.downcase}_timeline") do |m|
           query = {}
           query[:type] = options[:type].to_sym if options[:type]
+          query[:severity] = options[:severity].to_sym if options[:severity]
 
           criteria = m.where(query).full_text_search(text)
           criteria = criteria.order_by(order) if order

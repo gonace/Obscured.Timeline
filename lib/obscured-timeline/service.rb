@@ -43,8 +43,6 @@ module Mongoid
         end
 
 
-        private
-
         class Record
           include Mongoid::Timeline::Record
         end

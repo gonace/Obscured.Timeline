@@ -29,6 +29,22 @@ describe Mongoid::Timeline::Service::Account do
     it { expect(response.count).to eq(12) }
   end
 
+  describe 'find' do
+    let!(:event) { account.add_event(type: :change, message: message, producer: account.id) }
+    let(:response) { service.find(event.id) }
+
+    it { expect(response).to_not be(nil) }
+    it { expect(response.id).to eq(event.id) }
+  end
+
+  describe 'find_by' do
+    let!(:event) { account.add_event(type: :change, message: message, producer: account.id) }
+    let(:response) { service.find_by(type: :change) }
+
+    it { expect(response).to_not be(nil) }
+    it { expect(response.count).to eq(1) }
+  end
+
   describe 'by' do
     context 'proprietor' do
       let(:response) { service.by(proprietor: { account_id: account.id }) }

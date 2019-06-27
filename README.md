@@ -44,6 +44,13 @@ module Obscured
     
     field :name, type: String
     field :email, type: String
+    field :locked, type: Boolean, default: false
+  end
+
+  def lock!
+    self.locked = true
+    self.add_event(type: :security, message: "Account has been locked!", producer: self.username)
+    save
   end
 end
 

@@ -100,5 +100,29 @@ describe Mongoid::Timeline::Tracker do
         it { expect(account.get_event(event.id)).to be_nil }
       end
     end
+
+    context 'clear events' do
+      before(:each) do
+        2.times do
+          account.add_event(type: :event, message: message, producer: account.email)
+        end
+        5.times do
+          account.add_event(type: :comment, message: message, producer: account.email)
+        end
+        5.times do
+          account.add_event(type: :change, message: message, producer: account.email)
+        end
+
+        it { expect(account.get_events.count).to be(12) }
+
+        context 'clear all event' do
+          before(:each) do
+            account.clear_events
+          end
+
+          it { expect(account.get_events.count).to be(0) }
+        end
+      end
+    end
   end
 end
