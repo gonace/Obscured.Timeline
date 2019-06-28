@@ -14,13 +14,6 @@ plugins:
   rubocop:
     enabled: true
     channel: rubocop-0-71
-    checks:
-      Rubocop/Metrics/ClassLength:
-        enabled: false
-      Rubocop/Metrics/MethodLength:
-        enabled: false
-      Rubocop/Metrics/LineLength:
-        enabled: false
   coffeelint:
     enabled: true
   eslint:
