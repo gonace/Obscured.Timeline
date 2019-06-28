@@ -5,6 +5,9 @@ checks:
       threshold: 10
   file-lines:
     enabled: false
+  method-complexity:
+    config:
+      threshold: 15
   method-lines:
     config:
       threshold: 250
