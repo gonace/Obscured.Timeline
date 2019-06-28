@@ -44,7 +44,6 @@ module Mongoid
           end
         end
 
-
         class Record
           include Mongoid::Timeline::Record
         end
