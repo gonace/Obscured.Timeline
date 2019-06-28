@@ -3,6 +3,8 @@ checks:
   complex-logic:
     config:
       threshold: 10
+  file-lines:
+    enabled: false
   method-lines:
     config:
       threshold: 250

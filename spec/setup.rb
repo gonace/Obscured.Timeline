@@ -24,7 +24,7 @@ RSpec.configure do |c|
     Mongoid.purge!
 
     Mongoid::Search.setup do |cfg|
-      cfg.strip_symbols = /[\"]/
+      cfg.strip_symbols = /["]/
       cfg.strip_accents = //
     end
   end
