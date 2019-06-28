@@ -9,8 +9,8 @@ Gem::Specification.new do |gem|
   gem.version       = Mongoid::Timeline::VERSION
   gem.authors       = ['Erik Hennerfors']
   gem.email         = ['erik.hennerfors@obscured.se']
-  gem.description   = "Default database timeline ability"
-  gem.summary       = "Default database timeline ability"
+  gem.description   = 'Default database timeline ability'
+  gem.summary       = 'Default database timeline ability'
   gem.homepage      = 'https://github.com/gonace/Obscured.Timeline'
 
   gem.required_ruby_version = '>= 2'

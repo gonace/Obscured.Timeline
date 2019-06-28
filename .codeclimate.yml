@@ -19,6 +19,8 @@ plugins:
         enabled: false
       Rubocop/Metrics/MethodLength:
         enabled: false
+      Rubocop/Metrics/LineLength:
+        enabled: false
   coffeelint:
     enabled: true
   eslint:
