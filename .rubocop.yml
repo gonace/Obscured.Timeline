@@ -4,3 +4,5 @@ Metrics/MethodLength:
   Enabled: false
 Metrics/LineLength:
   Enabled: false
+Naming/FileName:
+  Disabled: true
