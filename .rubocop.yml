@@ -1,6 +1,8 @@
+Metrics/AbcSize:
+  Max: 50
 Metrics/ClassLength:
   Enabled: false
-Metrics/Cyclomatic:
+Metrics/CyclomaticComplexity:
   Max: 15
 Metrics/LineLength:
   Enabled: false
