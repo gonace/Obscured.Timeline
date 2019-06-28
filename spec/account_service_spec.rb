@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require_relative '../lib/obscured-timeline'
 require_relative 'setup'
 require_relative 'helpers/account_document'
 require_relative 'helpers/account_service'
