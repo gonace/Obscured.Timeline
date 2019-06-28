@@ -1,8 +1,12 @@
 Metrics/ClassLength:
   Enabled: false
-Metrics/MethodLength:
-  Enabled: false
+Metrics/Cyclomatic:
+  Max: 15
 Metrics/LineLength:
   Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Max: 15
 Naming/FileName:
   Disabled: true
