@@ -1,4 +1,4 @@
-<a href="https://snyk.io/test/github/gonace/obscured.timeline"><img src="https://snyk.io/test/github/gonace/obscured.timeline/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/gonace/obscured.timeline" style="max-width:100%;"></a>
+[![Vulnerabilities](https://snyk.io/test/github/gonace/obscured.timeline/badge.svg)](https://snyk.io/test/github/gonace/obscured.timeline)
 [![Build Status](https://travis-ci.org/gonace/Obscured.Timeline.svg?branch=master)](https://travis-ci.org/gonace/Obscured.Timeline)
 [![Test Coverage](https://codeclimate.com/github/gonace/Obscured.Timeline/badges/coverage.svg)](https://codeclimate.com/github/gonace/Obscured.Timeline)
 [![Code Climate](https://codeclimate.com/github/gonace/Obscured.Timeline/badges/gpa.svg)](https://codeclimate.com/github/gonace/Obscured.Timeline)
