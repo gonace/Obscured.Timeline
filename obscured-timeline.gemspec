@@ -7,10 +7,12 @@ require 'obscured-timeline/version'
 Gem::Specification.new do |gem|
   gem.name          = 'obscured-timeline'
   gem.version       = Mongoid::Timeline::VERSION
+  gem.platform      = Gem::Platform::RUBY
+  gem.licenses      = ['MIT']
   gem.authors       = ['Erik Hennerfors']
   gem.email         = ['erik.hennerfors@obscured.se']
-  gem.description   = 'Default database timeline ability'
-  gem.summary       = 'Default database timeline ability'
+  gem.description   = 'Mongoid extension that handles a timeline of events for an entity (e.g. User)'
+  gem.summary       = 'Mongoid extension that adds the ability to handle events in a timeline for a entity (e.g. User)'
   gem.homepage      = 'https://github.com/gonace/Obscured.Timeline'
 
   gem.required_ruby_version = '>= 2'
