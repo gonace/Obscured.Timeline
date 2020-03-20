@@ -15,7 +15,7 @@ Obscured timeline adds event to a separate collection for an entity (Document), 
 
 ##### Add this line to your application's Gemfile
 ```ruby
-gem 'obscured-timeline', :git => 'https://github.com/gonace/Obscured.Timeline.git', :branch => 'master'
+gem 'obscured-timeline'
 ```
 
 ##### Execute
