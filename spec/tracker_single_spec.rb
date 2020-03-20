@@ -72,7 +72,7 @@ describe Mongoid::Timeline::Tracker do
       context 'with limit and type' do
         let(:response) { account.search_events(account.id, limit: 10, type: :payment) }
 
-        it { expect(response.count).to eq(5) }
+        it { expect(response.count).to eq(10) }
       end
     end
 

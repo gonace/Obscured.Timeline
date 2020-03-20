@@ -8,7 +8,7 @@ module Mongoid
           base.extend ClassMethods
         end
 
-        def all(criterion = nil)
+        def all(criterion = {})
           Record.with(collection: "#{self.class.name.demodulize.downcase}_timeline") do |m|
             m.all(criterion).to_a
           end
