@@ -11,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.licenses      = ['MIT']
   gem.authors       = ['Erik Hennerfors']
   gem.email         = ['erik.hennerfors@obscured.se']
-  gem.description   = 'Mongoid extension that handles a timeline of events for an entity (e.g. User)'
-  gem.summary       = 'Mongoid extension that adds the ability to handle events in a timeline for a entity (e.g. User)'
+  gem.summary       = 'Mongoid extension that adds the ability to handle events in a timeline for an entity (e.g. User).'
+  gem.description   = 'Obscured::Timeline is a Mongoid extension adds events to a separate collection for an entity (e.g. User), the naming of the class (Mongoid Document) is used for naming the timeline collection, so if the class is named "Account" the collection name will end up being "account_timeline".'
   gem.homepage      = 'https://github.com/gonace/Obscured.Timeline'
 
   gem.required_ruby_version = '>= 2'
