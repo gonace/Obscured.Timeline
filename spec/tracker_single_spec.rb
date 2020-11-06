@@ -70,7 +70,7 @@ describe Mongoid::Timeline::Tracker do
       end
 
       context 'with limit and type' do
-        let(:response) { account.search_events(account.id, limit: 10, type: :payment) }
+        let(:response) { account.search_events(account.id, limit: 10, type: :comment) }
 
         it { expect(response.count).to eq(10) }
       end
