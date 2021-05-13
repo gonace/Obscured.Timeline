@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    obscured-timeline (1.0.0)
+    obscured-timeline (1.0.1)
       activesupport
       mongoid
       mongoid_search
