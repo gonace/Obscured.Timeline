@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
 module Obscured
-  VERSION = '1.3.0'.freeze
+  module Timeline
+    VERSION = '1.4.0'.freeze
+  end
 end
