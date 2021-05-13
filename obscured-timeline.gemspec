@@ -6,7 +6,7 @@ require 'obscured-timeline/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'obscured-timeline'
-  gem.version       = Obscured::VERSION
+  gem.version       = Obscured::Timeline::VERSION
   gem.platform      = Gem::Platform::RUBY
   gem.licenses      = ['MIT']
   gem.authors       = ['Erik Hennerfors']
