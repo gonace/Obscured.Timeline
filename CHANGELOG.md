@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/gonace/Obscured.Timeline/compare/v1.1.0...v1.2.0) (2021-05-13)
+
+
+### Features
+
+* Updated namespace ([d8b9e76](https://www.github.com/gonace/Obscured.Timeline/commit/d8b9e768faebfd4452e0ce2c154fd7b04962baf4))
+
 ## [1.1.0](https://www.github.com/gonace/Obscured.Timeline/compare/v1.0.1...v1.1.0) (2021-05-13)
 
 
