@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Mongoid
+module Obscured
   module Timeline
     VERSION = '1.0.1'.freeze
   end
