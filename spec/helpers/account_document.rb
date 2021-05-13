@@ -2,7 +2,7 @@ module Obscured
   class Account
     include Mongoid::Document
     include Mongoid::Timestamps
-    include Mongoid::Timeline::Tracker
+    include Obscured::Timeline::Tracker
 
     store_in collection: "accounts"
 

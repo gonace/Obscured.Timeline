@@ -3,7 +3,7 @@
 require 'mongoid'
 require 'mongoid_search'
 
-module Mongoid
+module Obscured
   module Timeline
     module Record
       extend ActiveSupport::Concern

@@ -5,7 +5,7 @@ require_relative 'helpers/account_document'
 require_relative 'helpers/organization_document'
 
 
-describe Mongoid::Timeline::Tracker do
+describe Obscured::Timeline::Tracker do
   let!(:account_email) { 'homer.simpson@obscured.se' }
   let!(:message) { 'Praesent a massa dui. Etiam eget purus consequat, mollis erat et, rhoncus tortor.' }
   let(:account) { Obscured::Account.new(email: account_email) }

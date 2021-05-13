@@ -2,13 +2,13 @@
 
 require 'active_support/concern'
 
-module Mongoid
+module Obscured
   module Timeline
     module Tracker
       extend ActiveSupport::Concern
 
       class Record
-        include Mongoid::Timeline::Record
+        include Obscured::Timeline::Record
       end
 
       # Adds event to the x_timeline collection for document. This is

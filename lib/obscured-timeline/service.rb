@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Mongoid
+module Obscured
   module Timeline
     module Service
       module Base
@@ -45,7 +45,7 @@ module Mongoid
         end
 
         class Record
-          include Mongoid::Timeline::Record
+          include Obscured::Timeline::Record
         end
       end
     end

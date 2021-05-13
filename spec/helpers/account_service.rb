@@ -1,8 +1,8 @@
-module Mongoid
+module Obscured
   module Timeline
     module Service
       class Account
-        include Mongoid::Timeline::Service::Base
+        include Obscured::Timeline::Service::Base
       end
     end
   end

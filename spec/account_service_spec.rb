@@ -5,10 +5,10 @@ require_relative 'helpers/account_document'
 require_relative 'helpers/account_service'
 
 
-describe Mongoid::Timeline::Service::Account do
+describe Obscured::Timeline::Service::Account do
   let!(:account) { Obscured::Account.new(email: 'homer.simpsons@obscured.se') }
   let!(:message) { 'Praesent a massa dui. Etiam eget purus consequat, mollis erat et, rhoncus tortor.' }
-  let!(:service) { Mongoid::Timeline::Service::Account.new }
+  let!(:service) { Obscured::Timeline::Service::Account.new }
 
   before(:each) do
     2.times do

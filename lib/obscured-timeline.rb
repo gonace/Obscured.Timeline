@@ -12,7 +12,7 @@ require 'obscured-timeline/record'
 require 'obscured-timeline/service'
 require 'obscured-timeline/tracker'
 
-module Mongoid
+module Obscured
   module Timeline
   end
 end

@@ -3,7 +3,7 @@
 require_relative '../../lib/obscured-timeline/record'
 
 FactoryBot.define do
-  factory :event, class: Mongoid::Timeline::Record do
+  factory :event, class: Obscured::Timeline::Record do
     type { :comment }
     message { 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' }
     producer { 'homer.simpson@obscured.se' }

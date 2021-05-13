@@ -2,7 +2,7 @@ module Obscured
   class Organization
     include Mongoid::Document
     include Mongoid::Timestamps
-    include Mongoid::Timeline::Tracker
+    include Obscured::Timeline::Tracker
 
     store_in collection: "organizations"
 
