@@ -76,7 +76,7 @@ account.search_events("homer.simpson@obscured.se", { type: :comment, limit: 20, 
 ```ruby
 module Obscured
   class AccountTimelineService
-    include Mongoid::Timeline::Service::Base
+    include Obscured::Timeline::Service::Base
   end
 end
 
