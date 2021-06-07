@@ -1,6 +1,6 @@
+[![Build Status](https://travis-ci.com/gonace/Obscured.Timeline.svg?branch=master)](https://travis-ci.org/gonace/Obscured.Timeline)
 [![Gem Version](https://badge.fury.io/rb/obscured-timeline.svg)](https://badge.fury.io/rb/obscured-timeline)
 [![Vulnerabilities](https://snyk.io/test/github/gonace/obscured.timeline/badge.svg)](https://snyk.io/test/github/gonace/obscured.timeline)
-[![Build Status](https://travis-ci.com/gonace/Obscured.Timeline.svg?branch=master)](https://travis-ci.org/gonace/Obscured.Timeline)
 [![Test Coverage](https://codeclimate.com/github/gonace/Obscured.Timeline/badges/coverage.svg)](https://codeclimate.com/github/gonace/Obscured.Timeline)
 [![Code Climate](https://codeclimate.com/github/gonace/Obscured.Timeline/badges/gpa.svg)](https://codeclimate.com/github/gonace/Obscured.Timeline)
 
